@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="NhaSach" Class="NhaSachDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-OS5D3KH\SQLEXPRESS;Initial Catalog=NhaSach;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="NhaSachConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.TheLoai" Member="TheLoais">
     <Type Name="TheLoai">
       <Column Name="maloai" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />

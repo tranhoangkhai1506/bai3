@@ -38,18 +38,19 @@ namespace Chieu4_Buoi3_TranHoangKhai_2011060423.Models
     partial void DeleteSach(Sach instance);
     #endregion
 		
+		public NhaSachDataContext() : 
+				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["NhaSachConnectionString1"].ConnectionString, mappingSource)
+		{
+			OnCreated();
+		}
+		
 		public NhaSachDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
-        public NhaSachDataContext() :
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["NhaSachConnectionString"].ConnectionString, mappingSource)
-        {
-            OnCreated();
-        }
-
-        public NhaSachDataContext(System.Data.IDbConnection connection) : 
+		
+		public NhaSachDataContext(System.Data.IDbConnection connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
